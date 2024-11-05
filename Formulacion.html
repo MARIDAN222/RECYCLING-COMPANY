@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulacion</title>
+</head>
+<body>
+    <link rel="stylesheet" href="./style.css">
+    <Body Bgcolor="f0fcb5">
+     <img src="./Logo_soap.png" width="350" height="300"> 
+     <div class="linea1">
+     </div>
+
+</head>
+<body>
+
+    <div id="header">
+        <ul class="nav">
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="">Quienes somos</a>
+                <ul>
+                    <li><a href="./plan.html">Plan estrategico</a></li>
+                    <li><a href="">Proyecto</a>
+                        <ul>
+                            <li><a href="./Mapa de procesoss.pdf">Mapa de procesos</a></li>
+                            <li><a href="./Canvas.pdf">Canvas</a></li>
+                            <li><a href="">Cronograma</a>
+                                <ul>
+
+                                </ul>
+
+                            </li>
+                        </ul>
+                    
+                    
+                    </li>
+                </ul>
+            </li>
+            <li><a href="">Evidencia</a>
+                <ul>
+                    <li><a href="./fotos.html">Fotos</a></li>
+                    <li><a href="https://forms.gle/XMDAo7KzSQcx6Brt8">Encuesta</a></li>
+                    <li><a href="./infografiaaaa.jpeg">Infografia</a></li>
+                    
+
+                    </a></li>
+                </ul>
+            </li>
+            <li><a href="">S. tecnologica</a>
+        </ul>
+        <li><a href="">Productos</a>
+            <ul>
+                <li><a href="./jabon.html">Jabones</a></li>
+                <li><a href="./aroma.html">Ambientadores</a></li>
+            
+            </ul>
+        </li>
+</ul>
+    </div>
+    <div class="menu">
+        <button class="menu-button" onclick="showImage('image1')"> Objetivo G.</button>
+        <button class="menu-button" onclick="showImage('image2')">P. problema</button>
+        <button class="menu-button" onclick="showImage('image3')">Objetivos E.</button>
+    </div>
+
+    <div class="image-container">
+        <br>
+        <br>
+        <br>
+        <br>
+       <center> <img id="image1" class="image" src="./general.jpg"  width="650" height="650"></center>
+        <center><img id="image2" class="image" src="./pregunta.jpg"  width="700" height="650"></center>
+      <center> <img id="image3" class="image" src="./especificos.jpg"  width="700" height="650"></center>
+    </div>
+
+    <script>
+        function showImage(imageId) {
+            // Ocultar todas las imágenes
+            const images = document.querySelectorAll('.image');
+            images.forEach(image => image.classList.remove('active'));
+
+            // Mostrar la imagen seleccionada
+            const selectedImage = document.getElementById(imageId);
+            selectedImage.classList.add('active');
+        }
+    </script> 
+</body>
+</html>
